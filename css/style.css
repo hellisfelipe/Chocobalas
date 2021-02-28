@@ -1,0 +1,605 @@
+/*Estilos gerais*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Largura da barra de rolagem */
+
+body {
+  font-family: "Varela Round", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  padding-top: 120px;
+}
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+/*Header*/
+header {
+  height: 120px;
+  background: #ca2921;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.espaco {
+  background-color: #ca2921;
+  width: 100%;
+  height: 20px;
+}
+.logo a img {
+  padding: 10px 0;
+}
+
+.menu nav ul li a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+.item {
+  border-right: 2px solid white;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.header {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  display: flex;
+}
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu li a:hover {
+  color: #ffd806;
+}
+.menu .active a {
+  color: #ffd806;
+}
+/*Fechamneto header*/
+/*MAIN*/
+.default {
+  padding-top: 40px;
+}
+.default .section-title {
+  max-width: 1140px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #ca2921;
+  border: 2px solid #ca2921;
+  border-radius: 15px;
+}
+.default .section-title span {
+  font-family: "Varela Round";
+  text-transform: uppercase;
+  font-size: 60px;
+  color: white;
+  border-bottom: 2px solid white;
+}
+@media (max-width: 800px) {
+  .default .section-title span {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .section-body {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.chocobalinha {
+  margin-right: 20px;
+}
+.section-body {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 10px 10px;
+  justify-content: space-between;
+}
+.ofertas {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.site {
+  max-width: 1140px;
+  margin: 60px auto;
+}
+@media (max-width: 800px) {
+  .site .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .site .flex-container img {
+    width: 300px;
+  }
+  .site .flex-container h2 {
+    font-size: 30px;
+  }
+}
+
+.site h1 {
+  font-size: 60px;
+  text-align: center;
+  color: #ca2921;
+  margin: 0 auto;
+}
+.site p {
+  font-size: 30px;
+  text-align: center;
+  color: #9f9f9f;
+  margin-bottom: 60px;
+}
+.flex-container {
+  max-width: 1140px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.flex-item {
+  flex: 1 1 175px;
+  margin: 10px;
+}
+.flex-item h2 {
+  font-size: 40px;
+  background-color: #ca2921;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+.flex-item img {
+  width: 100%;
+}
+.dicas {
+  border-top: 8px solid #ffd806;
+}
+.sorteio {
+  border-top: 8px solid #ffd806;
+}
+.receita {
+  border-top: 8px solid #ffd806;
+}
+footer {
+  background-color: #ca2921;
+  margin-top: 20px;
+}
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  padding: 50px 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  footer .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+  }
+  footer .logo-footer img {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  footer .footer-menu {
+    margin-bottom: 30px;
+  }
+  footer .footer-redes {
+    margin-top: 20px;
+  }
+}
+
+footer .footer-socias {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+footer .logo-footer img {
+  margin: 0 auto;
+  width: 300px;
+}
+footer .footer-menu {
+  border-left: 1px solid #ccc;
+  height: 170px;
+  padding: 10px;
+}
+footer .footer-menu ul li {
+  padding: 5px;
+}
+footer .footer-menu ul li a {
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+footer .footer-menu ul li a:hover {
+  color: #ffd806;
+}
+footer .footer-contato {
+  color: white;
+  border-left: 1px solid #ccc;
+  height: 170px;
+  padding: 10px;
+}
+footer .footer-contato h1 {
+  margin-bottom: 10px;
+}
+footer .footer-redes {
+  color: white;
+  border-left: 1px solid #ccc;
+  height: 170px;
+  padding: 10px;
+}
+footer .footer-redes .footer-socias img:hover {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+}
+
+/*LAYOUT TRABELHE CONOSCO*/
+.bg-banner {
+  background-image: url(../img/bg-contato.jpg);
+  height: 400px;
+  background-size: cover;
+}
+
+section.section-form {
+  display: flex;
+  background-color: #ccf2f4;
+  height: 700px;
+}
+
+section .container-form {
+  background-color: white;
+  margin-top: -50px;
+  flex: 1;
+  border: 0 solid white;
+  border-radius: 0 20px 20px 0;
+  padding: 20px 10px 20px 20px;
+  justify-content: space-between;
+  height: 650px;
+}
+section .infor {
+  flex: 1;
+}
+section .celular img {
+  width: 100%;
+}
+.section-celular {
+  margin-bottom: 20px;
+}
+section.letter fieldset {
+  background-color: red;
+  max-width: 1140px;
+  height: 100px;
+}
+
+/*Formulario*/
+fieldset {
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+legend {
+  font-weight: bold;
+}
+label {
+  display: block;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 5px;
+}
+.section-form input {
+  border: 1px solid #ccc;
+  height: 30px;
+  width: 300px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+label span {
+  color: red;
+}
+textarea {
+  width: 20em;
+  height: 10em;
+  border: 1px solid #ccc;
+}
+.bt {
+  border: 1px solid #ca2921;
+  background: white;
+  color: #ca2921;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 6px 10px;
+  text-decoration: none;
+}
+.bt span {
+  color: #ca2921;
+}
+.container-letter {
+  display: flex;
+}
+.letter-receba {
+  border-top: 1px solid #ccc;
+}
+.letter-receba h1 {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.letter-redes {
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.letter-redes img:hover {
+  background-color: #ca2921;
+  border-radius: 50%;
+}
+.container-letter h1 {
+  margin: 20px;
+  font-size: 30px;
+}
+@media (max-width: 600px) {
+  .letter .name,
+  .email {
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+}
+
+.letter .name {
+  width: 200px;
+}
+.container-letter input {
+  margin-right: 15px;
+  border-radius: 4px;
+  height: 50px;
+  width: 300px;
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.letter {
+  display: flex;
+
+  padding: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 230px;
+}
+.bt-letter {
+  border-radius: 4px;
+  background-color: #ca2921;
+  color: white;
+  border: none;
+  text-align: center;
+  padding: 15px 10px;
+  margin-left: 10px;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+}
+.bt-letter:hover {
+  background-color: #e61e14;
+}
+
+.infor {
+  background-color: #ccf2f4;
+}
+.texto {
+  text-align: center;
+  flex-wrap: wrap;
+  margin-right: 100px;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+.texto h1 {
+  margin: 20px 0;
+  font: 20px;
+}
+.texto p {
+  line-height: 30px;
+  font-size: 15px;
+}
+
+/* Pagina de entrada*/
+
+.container-geral {
+  background-image: url(../img/bg-geral.jpg);
+  background-size: cover;
+}
+
+.container-opcao {
+  background-color: blue;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*INICIO  LAYOUT NOSSAS LOJAS */
+
+.nossas-lojas {
+  margin-top: 50px;
+}
+.lojas {
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #ca2921;
+  border: 2px solid #ca2921;
+  border-radius: 15px;
+  padding: 10px;
+}
+.nossas-lojas-end h1 {
+  font-family: "Varela Round";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 50px;
+  color: white;
+  border-bottom: 2px solid white;
+}
+.container-loja {
+  display: flex;
+  max-width: 1140px;
+  margin: 50px auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.espaco-loja {
+  background-color: #f2f2f2;
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 0.5rem;
+}
+.espaco-loja h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #e61e14;
+}
+.espaco-img {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-color: #9f9f9f;*/
+  width: 220px;
+  height: 120px;
+  margin: 0 auto;
+  margin-top: 30px;
+  /*border: 1px solid #9f9f9f;*/
+  border-radius: 15px;
+  justify-content: center;
+}
+.espaco-loja:hover {
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 40%);
+  animation: all 0.3s;
+}
+.info-loja {
+  /*background-color: aqua;*/
+  font-size: 15px;
+  margin-top: 20px;
+  vertical-align: middle;
+}
+.info-loja li {
+  /*background-color: red;*/
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.info-loja__icon img {
+  /*background-color: green; */
+  margin-right: 10px;
+}
+
+.info-loja__info {
+  font-size: 1em;
+}
+
+.info-loja__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-loja__link {
+  display: flex;
+  height: 40px;
+  width: 80%;
+  border-radius: 1.1rem;
+  border: 1px solid #ca2921;
+  align-items: center;
+  justify-content: center;
+  color: #ca2921;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.info-loja__link:hover {
+  background-color: #ca2921;
+  color: #fff;
+}
+
+.teste {
+  display: inline;
+}
+
+/*FIM LAYOUT NOSSAS LOJAS*/
+
+/* INICIO LAYOUT QUEM SOMOS*/
+
+.quem-somos {
+  margin-bottom: 50px;
+}
+.linha {
+  text-align: center;
+}
+.linha img {
+  margin-top: 50px;
+}
+.container-somos {
+  display: flex;
+  flex-direction: column;
+  max-width: 1140px;
+  margin: 0 auto;
+  align-items: center;
+}
+.linha h1 {
+  font-size: 30px;
+  color: #ca2921;
+}
+.somos {
+  text-align: center;
+  padding: 50px;
+}
+.somos h1 {
+  font-size: 30px;
+  color: #ca2921;
+}
+.somos p {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #808080;
+  line-height: 40px;
+}
+@media (max-width: 800px) {
+  .linha img {
+    width: 500px;
+    justify-content: center;
+  }
+}
+.bg-somos img {
+  border-top: 2px solid #9f0000;
+  border-bottom: 2px solid #9f0000;
+}
+
+/* FIM LAYOUT QUEM SOMOS*/

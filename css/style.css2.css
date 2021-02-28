@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Varela Round", Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(red, yellow);
+  background-size: cover;
+}
+
+.container-geral {
+  max-width: 1140px;
+  background-repeat: repeat;
+  background-size: cover;
+  padding-top: 50px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+section .chocobalinha {
+  margin: 30px 30px 0 0;
+}
+.city-opcao {
+  margin-top: 20px;
+  font-weight: 600;
+  margin-left: 55px;
+}
+button {
+  margin-top: 20px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: 2px solid #ca2921;
+  background: transparent;
+}
+.container-opcao {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: transparent;
+  font-size: 25px;
+  background-color: thistle;
+  align-items: center;
+}
+.container-opcao h1 {
+  text-align: center;
+}
+button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.escolha {
+  background-color: white;
+  width: 400px;
+  height: 50px;
+  border: 1px;
+  margin-top: 20px;
+}
+.escolha span {
+  color: #ca2921;
+}
